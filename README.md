@@ -1,46 +1,74 @@
 # Campfire interview kit
 
-Accounting-domain screens for an AI-native ERP: general ledger, close, revenue recognition, reconciliation, integrations, and grounded AI over the books.
+This is everything we use to interview engineers at Campfire, published in full: the
+questions, the process, and six exercises with runnable failing tests. Nothing here is
+withheld, and there is no hidden version.
 
-Campfire hires on **Python** and **TypeScript (Next.js / React)**. These exercises stay in that world. None of them are LeetCode.
+We do that because our problems are not the kind you can spoil by reading about them in
+advance. Campfire is an AI-native ERP — general ledger, multi-entity consolidation, bank
+reconciliation, ASC 606 revenue recognition, period close, and Ember, the assistant that
+answers questions about the books. The interesting parts are the invariants and the
+judgment calls, and knowing what we are going to ask does not tell you what you would do
+about a $2.50 bank fee that never made it into the general ledger.
+
+We hire on **Python** and **TypeScript (Next.js / React)**. Every exercise is in one of
+those. None of them are LeetCode.
 
 ## What's in here
 
-| Path | Purpose |
+| Path | What it is |
 | --- | --- |
-| [interview-kit.md](interview-kit.md) | All **20 questions**: prompts, AI policy, junior / senior / staff bars, follow-ups, red flags |
-| [loop.md](loop.md) | Screen and onsite mixes, including a track-specific table |
-| [exercises/](exercises/) | Six starter repos with failing tests, for pairing or take-homes |
+| [interview-kit.md](interview-kit.md) | All twenty questions: the problem, why we ask it, what a strong answer covers, and the follow-ups |
+| [loop.md](loop.md) | The stages of the process and what happens in each one |
+| [exercises/](exercises/) | Six starter folders with failing tests, each with its own detailed README |
 
-## Tracks
+## Try the exercises
 
-System design, schema design, product engineering, backend engineering, data engineering, and AI engineering, plus the controls work an ERP forces on you: permissions, segregation of duties, and auditability.
-
-## AI policy
-
-- **AI-off** means no Copilot, no chat assistant, no autocomplete writing logic. Language docs are fine and the candidate narrates as they go. These reveal whether they actually own double-entry, invariants, and edge cases.
-- **AI-on** means tools are allowed. Grade product sense, review quality, and whether they catch the accounting bugs a model will happily ship.
-
-A senior who is fast with AI and sloppy on debits and credits fails. A junior who is slow but protects the ledger can still clear the junior bar.
-
-## Hands-on exercises
-
-Every starter ships failing tests so the candidate begins by reading the spec.
+Every starter ships with failing tests, so the first thing you do is read the spec. Each
+exercise folder has a README that explains the accounting background, the exact contract
+you are implementing, what each test is checking, and where the conversation usually goes
+afterwards.
 
 ```bash
-cd exercises/python && pytest -q            # Q1, Q7, Q16, Q17
-cd exercises/typescript && npm install && npm test   # Q2, Q10
+# Python — Q1, Q7, Q16, Q17
+pip install pytest
+(cd exercises/python && pytest -q)
+
+# TypeScript — Q2, Q10
+(cd exercises/typescript && npm install && npm test)
 ```
 
 | Exercise | Question | AI |
 | --- | --- | --- |
-| `python/journal_posting` | Q1 double-entry posting | Off |
-| `python/bank_matching` | Q7 reconciliation proposals | Off for screens, on for onsite |
-| `python/prepaid_amortization` | Q16 amortization schedule | On |
-| `python/categorization_eval` | Q17 model evaluation | On |
-| `typescript/trial_balance` | Q2 trial balance and P&L | Off |
-| `typescript/period_close` | Q10 close state machine | Off |
+| [`python/journal_posting`](exercises/python/journal_posting/) | Q1 — a journal that cannot unbalance the books | Off |
+| [`python/bank_matching`](exercises/python/bank_matching/) | Q7 — reconciliation proposals | Off for the screen, on later |
+| [`python/prepaid_amortization`](exercises/python/prepaid_amortization/) | Q16 — amortization schedule in whole cents | On |
+| [`python/categorization_eval`](exercises/python/categorization_eval/) | Q17 — evaluating a GL-coding model | On |
+| [`typescript/trial_balance`](exercises/typescript/trial_balance/) | Q2 — trial balance and P&L | Off |
+| [`typescript/period_close`](exercises/typescript/period_close/) | Q10 — close as a state machine | Off |
 
-## Depth
+You are welcome to work through these before an interview. If you do, come ready to talk
+about the decisions you made rather than to re-type the solution.
 
-Every question carries three bars: **junior**, **senior**, **staff**. Ask the same stem for all candidates and climb the follow-ups until they stall. Don't hand juniors an easier domain — hand them the same ledger and stop earlier.
+## What we cover
+
+System design, schema design, product engineering, backend engineering, data engineering,
+and AI engineering — plus the controls work an ERP forces on you: permissions, segregation
+of duties, and auditability.
+
+## AI in the interview
+
+Some sessions are run **without AI** and some **with it**, and both are on purpose. The
+AI-off sessions exist so we can see that you personally hold the domain model — that you
+know why a journal must balance and what a locked period protects. The AI-on sessions are
+genuinely AI-on: use the tools, and expect us to review the output together, because
+catching the accounting bug a model confidently shipped is the actual job.
+
+[loop.md](loop.md) says which sessions are which.
+
+## Do you need to know accounting?
+
+No. Most people we hire did not, and several of these questions explain the concept in the
+prompt. What we need is that you treat the domain as real. A ledger has invariants that
+software cannot negotiate with, and "close enough" arithmetic ends up in someone's audit
+file. If that sounds interesting rather than tedious, you will enjoy these problems.
