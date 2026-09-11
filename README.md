@@ -1,7 +1,8 @@
 # Campfire interview kit
 
 This is everything we use to interview engineers at Campfire, published in full: the
-questions, the process, and six exercises with runnable failing tests. Nothing here is
+questions, the process, the behavioral interview, and six exercises with runnable failing
+tests. Nothing here is
 withheld, and there is no hidden version.
 
 We do that because our problems are not the kind you can spoil by reading about them in
@@ -21,6 +22,7 @@ those. None of them are LeetCode.
 | [interview-kit.md](interview-kit.md) | All twenty questions: the problem, why we ask it, what a strong answer covers, and the follow-ups |
 | [loop.md](loop.md) | The stages of the process and what happens in each one |
 | [exercises/](exercises/) | Six starter folders with failing tests, each with its own detailed README |
+| [behavioral/](behavioral/) | The behavioral interview: one file per core principle, with the questions we ask and what we listen for |
 
 ## Try the exercises
 

@@ -37,6 +37,8 @@ Three things packed into half an hour, so expect us to move quickly:
    into the domain: what would you want a ledger to refuse to do?
 3. **Behavioral.** How you have handled disagreement, ambiguity, and being wrong. We want
    empathy for controllers as users — they are not consumers, and they are not developers.
+   The questions come from [`behavioral/`](behavioral/), usually the Customer-Centric
+   Innovation and Growth Mindset files.
 
 ## Virtual technical screen — 45 minutes, code review and bug fixing, no AI
 
@@ -90,9 +92,13 @@ first draft compiled, and we will review the model's output together.
 
 ### Behavioral — 30 minutes
 
-A conversation with someone you would work alongside. Concrete stories beat principles:
-a time you shipped something that was wrong and what you did next, a time you disagreed
-with a decision and how it resolved, a time you had to learn a domain from zero.
+A conversation with someone you would work alongside, drawn from the questions in
+[`behavioral/`](behavioral/). There is one file per core principle, and this session
+usually goes deep on two or three of them — most often Transparent Accountability and
+Collaborative Excellence, since by now we have seen you code and want to know what you
+are like to ship with. Concrete stories beat principles: a time you shipped something
+that was wrong and what you did next, a time you disagreed with a decision and how it
+resolved, a time you had to learn a domain from zero.
 
 ### Typical mixes by track
 
