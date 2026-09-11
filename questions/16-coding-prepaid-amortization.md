@@ -27,3 +27,12 @@ prepaid rollforward from posted journals rather than a sidecar table that will d
 
 **Common problems.** Dividing dollars as floats. Amortizing into a locked period by
 mutating old journals.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | Dollars are divided as floats, so the schedule does not sum to the original amount. Amortization reaches into a locked period by mutating old journals. The prepaid balance does not reach zero, or the schedule and the posted journals are not connected. |
+| 2 | Twelve equal postings with the prepaid balance reaching zero, using integer cents. Remainder cents, a mid-month start, and locked periods are handled only when asked. The month-end job may double-post if re-run. |
+| 3 | A daily or monthly convention is chosen and stated, remainder cents land deterministically, a locked period is refused so the expense accrues into the next open one, and the month-end job is idempotent. The January 17 start and the June 1 cancellation with partial refund are handled cleanly. |
+| 4 | Everything in 3, plus the further material unprompted: many schedules per vendor, termination and impairment, FX on the original bill, linkage back to the source bill, and the prepaid rollforward derived from posted journals rather than a sidecar table that will drift. Tradeoffs are stated. Code is clean and tested. |

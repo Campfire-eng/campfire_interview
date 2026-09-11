@@ -38,3 +38,12 @@ revenue."
 **Common problems.** Posting to the GL with no unique key. Returning 500 on every retry.
 Parsing JSON floats as dollars. Overwriting GL memos on every sync. Hardcoding the account
 mapping.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | GL entries are posted with no unique key, so a retried webhook posts twice. The handler returns 500 on every retry, or acknowledges before persisting. JSON floats are parsed as dollars. The account mapping is hardcoded and GL memos are overwritten on every sync. |
+| 2 | The signature is verified, events are deduplicated on (provider, event_id), and the webhook is acknowledged only after persisting. External ids are stored. Periodic pull, the inbox and outbox split, replay, late refunds, out-of-order arrival, and product mapping are missing or vague until asked. Sync is treated as a hidden background job rather than part of the product. |
+| 3 | An inbox for events and an outbox for posting give exactly one journal per charge and safe replay. Late refunds, a payment that syncs before its invoice, cursors and backfill, rate limits, and a dead-letter path with replay are covered. Stripe products map to performance obligations and GL accounts, and paused sync is visible in the UI. The post-commit failure, mid-deploy retry, account switch, and voided invoice follow-ups are handled well. |
+| 4 | Everything in 3, plus the deeper material unprompted: a source-of-truth matrix with billing in Stripe and books in Campfire, partial payments, multiple Stripe accounts per entity, and a three-year backfill that does not overload the GL. A reconciliation job diffs Stripe's list API against the inbox, and contract tests run against fixtures. The candidate states what the AI layer must never do, such as posting against a charge id it invented. |

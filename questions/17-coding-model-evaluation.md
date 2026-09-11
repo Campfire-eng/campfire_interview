@@ -37,3 +37,12 @@ customer renumbers their chart of accounts."
 **Common problems.** A single accuracy number. Evaluating on training data. No notion
 of amount anywhere. Choosing a threshold without reference to review capacity or
 materiality.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | Reports a single accuracy number, or metrics that divide by zero on unseen classes. Evaluates on training data or on items the model already had corrected. Amount does not appear anywhere in the evaluation. The threshold is picked without reference to review capacity or materiality. |
+| 2 | Precision, recall, and coverage are computed correctly, with unseen classes handled. Auto-approved and reviewed items are lumped together, and dollar-weighted error is missing or secondary until asked. Threshold selection is a number without a stated trade. The held-out set and per-account breakout come up only when prompted. |
+| 3 | Auto-approved and reviewed populations are evaluated separately, and dollar-weighted error is the primary metric. The threshold is framed as a trade between reviewer hours and misstatement risk, measured on a held-out set not contaminated by corrected items. Results are broken out per account. The follow-ups on label bias and a renumbered chart of accounts are handled well. |
+| 4 | Everything in 3, plus the deeper material unprompted: noisy and delayed controller labels as ground truth, drift monitoring after a chart of accounts change, slicing by entity, vendor, and new-vendor status, and calibration so that 0.95 confidence really means 95%. The eval is tied to a rollout gate and a kill switch, and tolerance is stated in accounting terms rather than F1 alone. Tradeoffs between review load and misstatement risk are explicit. |

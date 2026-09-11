@@ -33,3 +33,12 @@ PTO." "The bill matches the PO. Can we skip the human review?"
 
 **Common problems.** An `isAdmin` boolean. Filtering only in the client. A service
 account that can read every tenant. Approval implemented by editing the live journal.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | An isAdmin boolean or a flat role list. Filtering happens only in the client, or a service account can read every tenant. Approval is implemented by editing the live journal. No coherent flow from submit to post. |
+| 2 | Roles map to permissions checked on routes, with a submit-approve-post flow. Conditions such as amount, account range, and entity are missing or bolted on. Deny by default, auditing of grants, self-approval, and what the approver saw are only addressed when asked. |
+| 3 | Permissions are resource, action, and condition, deny by default, with every grant audited. Assistant tools re-check authorization rather than trusting the chat session. Approvals are multi-step with thresholds, delegation, reject-with-reason, an immutable snapshot of what the approver saw, and no self-approval. The contractor, see-versus-post, PTO, and PO-match follow-ups are handled well. |
+| 4 | Everything in 3, plus the deeper material unprompted: segregation-of-duties conflicts across prepare, approve, and lock; groups and implied permissions with fixture-based tests to keep thousands of flags maintainable; per-entity roles for the same user; break-glass access; policy stored as versioned data; evidence export for auditors; and AI-drafted journals on the same workflow with no fast path. Tradeoffs are stated. |

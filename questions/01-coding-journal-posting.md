@@ -33,3 +33,12 @@ after posting." "The same Stripe charge arrives twice."
 **Common problems.** Using floats for money. Adding a line to make an unbalanced journal
 balance. Editing posted lines instead of reversing them. Expecting the UI to validate the
 input.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | The journal can be posted unbalanced, or the balance check exists but can be bypassed. Money is stored as floats. Errors are generic or silent. The candidate adds a balancing line to make a bad journal fit, or edits posted lines in place. |
+| 2 | Balanced journals are enforced and unbalanced ones are rejected with an error. Empty journals, all-zero lines, and lines with both a debit and a credit may slip through. Errors do not say what was wrong. No thought given to duplicates, periods, or immutability until asked. |
+| 3 | All of the basic invariants are enforced with clear error types. The candidate raises at least one of idempotency, period status, or postable accounts on their own, and handles the rest well when asked. Posted journals are treated as immutable, with reversal as the correction path. |
+| 4 | Everything in 3, plus the candidate gets to the deeper material unprompted: an idempotency key with a defined race behavior, a period check, header versus postable accounts, and a stated rounding policy. They can say how multi-currency lines and post-commit events would fit without changing the core. Code is clean and tested. |

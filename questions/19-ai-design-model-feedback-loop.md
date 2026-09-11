@@ -37,3 +37,12 @@ today without retraining everything."
 **Common problems.** Training on auto-approved predictions with no human labels and no
 awareness of the feedback loop. One global model keyed on raw account ids. No versioning of
 what produced a posted entry. Fine-tuning offered as the answer to every quality problem.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | Trains on auto-approved predictions with no human labels and no awareness of the feedback loop. One global model keyed on raw account ids across tenants. Nothing records which model version produced a posted entry. Fine-tuning is offered as the answer to every quality problem. |
+| 2 | Suggestions and outcomes are logged, a training table is built, retraining runs on a schedule, and a test set is held out. Point-in-time correctness of features, tenancy of models, and label delay during close are missing or vague until asked. Shadow mode and output validation against the tenant's chart of accounts come up only when prompted. |
+| 3 | Features are point-in-time correct, or a feature store is proposed. Per-tenant versus shared models are separated with a clear view of what generalizes, such as vendor semantics, versus what does not, such as account ids. Label delay during close, class imbalance, shadow mode before auto-post, and structured output validated against the tenant's real chart are covered. The follow-ups on tenant opt-out, training on its own outputs, and a one-customer fix are handled well. |
+| 4 | Everything in 3, plus the deeper material unprompted: training-serving skew, leakage when corrected labels reappear as features, and privacy and contractual limits on cross-tenant training with a way to still benefit from shared learning. Per-customer calibration, rollback when a new model regresses one entity, and cost and latency budgets at hundreds of thousands of transactions a month are covered. The audit story for which model version coded a given transaction is explicit, with tradeoffs stated. |

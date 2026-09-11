@@ -30,3 +30,12 @@ hits ten days right before close."
 
 **Common problems.** Auto-posting with no human visibility. No unmatched aging metric. A
 close checklist that ignores what the automation did.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | Events auto-post to the books with no human visibility, or there is no distinction between a proposal and a posted entry. There is no unmatched aging metric. The close checklist ignores what the automation did. The design does not reach a coherent pipeline from event to certified reconciliation. |
+| 2 | The basic flow is there: event in, suggestion out, a human posts, reconciliation follows. Proposals may not be a distinct state from posted entries, and thresholds and risk-ordered queues come up only when asked. Periods, exactly-once posting, and observability on lag and unmatched aging are missing or vague until prompted. |
+| 3 | Proposals are a distinct state, with thresholds and queues ordered by risk. Periods still govern everything, posting is exactly-once, and lag and unmatched aging are observable. The follow-ups on a model quality drop after a chart redesign and unmatched aging hitting ten days before close are handled with a clear plan. |
+| 4 | Everything in 3, plus the deeper material unprompted: what must never be autonomous, such as locking, material estimates, and related-party items. Backpressure, model and policy version stamped on every auto-post, replaying a day of events, and a reason code and kill switch behind each automated action are covered. The answer says how certification stays meaningful when a machine did the matching, with tradeoffs stated. |

@@ -42,30 +42,48 @@ review what a model wrote.
 ## The questions
 
 One file per question. Each has the problem, why we ask it, what a strong answer covers,
-the follow-ups, and common problems. Starter paths are relative to the repository root.
+the follow-ups, common problems, and a rubric. Starter paths are relative to the
+repository root.
 
-| # | Question |
+## How the rubric works
+
+Every question ends with a rubric that scores the answer from 1 to 4 and describes what
+an answer at each level looks like for that question.
+
+| Score | Meaning |
 | --- | --- |
-| 1 | [Post a journal that cannot unbalance the books](01-journal-posting.md) |
-| 2 | [Trial balance and a P&L from the same lines](02-trial-balance.md) |
-| 3 | [Schema for a real general ledger](03-gl-schema.md) |
-| 4 | [Multi-entity consolidation without the spreadsheet](04-consolidation.md) |
-| 5 | [Stripe: from webhook to native connector](05-stripe-connector.md) |
-| 6 | [AI categorization review queue](06-review-queue.md) |
-| 7 | [Score bank transactions against GL candidates](07-bank-matching.md) |
-| 8 | [ASC 606 schema and recognition schedule](08-asc-606.md) |
-| 9 | [Multi-currency: functional versus reporting](09-multi-currency.md) |
-| 10 | [Period close as a state machine](10-period-close.md) |
-| 11 | [Flux analysis pipeline](11-flux-pipeline.md) |
-| 12 | [Account reconciliation workspace](12-recon-workspace.md) |
-| 13 | [Ember: answers that can go in the audit file](13-ember-grounding.md) |
-| 14 | [Permissions, segregation of duties, and approval workflows](14-permissions-and-approvals.md) |
-| 15 | [Duplicate detection across integrations](15-duplicate-detection.md) |
-| 16 | [Prepaid amortization engine](16-prepaid-amortization.md) |
-| 17 | [Evaluate the categorization model like an accountant](17-model-evaluation.md) |
-| 18 | [Continuous close and autonomous reconciliation](18-continuous-close.md) |
-| 19 | [The feedback loop that trains the accounting model](19-model-feedback-loop.md) |
-| 20 | [Point-in-time reports, audit log, and who changed the books](20-point-in-time-and-audit.md) |
+| 1 | Breaks a core invariant of the question or does not reach a coherent answer. |
+| 2 | Basic and mostly correct. Covers the first points of a strong answer, with gaps that are filled only when we ask. |
+| 3 | Solid. Covers the main points on its own and handles the follow-ups well. |
+| 4 | Everything in 3, plus the deeper material reached without prompting, with tradeoffs stated. |
+
+Interviewers record the score and the specific evidence for it. A 3 is a good result. A 4
+is uncommon in 45 minutes and is not required for a hire. A 1 on a question run without AI
+is the result we weigh most, because it usually means the candidate does not hold the
+domain model the question tests.
+
+| # | Type | Question |
+| --- | --- | --- |
+| 1 | coding | [Post a journal that cannot unbalance the books](01-coding-journal-posting.md) |
+| 2 | coding | [Trial balance and a P&L from the same lines](02-coding-trial-balance.md) |
+| 3 | schema | [Schema for a real general ledger](03-schema-gl-schema.md) |
+| 4 | system-design | [Multi-entity consolidation without the spreadsheet](04-system-design-consolidation.md) |
+| 5 | system-design | [Stripe: from webhook to native connector](05-system-design-stripe-connector.md) |
+| 6 | product-design | [AI categorization review queue](06-product-design-review-queue.md) |
+| 7 | coding | [Score bank transactions against GL candidates](07-coding-bank-matching.md) |
+| 8 | schema | [ASC 606 schema and recognition schedule](08-schema-asc-606.md) |
+| 9 | system-design | [Multi-currency: functional versus reporting](09-system-design-multi-currency.md) |
+| 10 | coding | [Period close as a state machine](10-coding-period-close.md) |
+| 11 | coding | [Flux analysis pipeline](11-coding-flux-pipeline.md) |
+| 12 | product-design | [Account reconciliation workspace](12-product-design-recon-workspace.md) |
+| 13 | ai-design | [Ember: answers that can go in the audit file](13-ai-design-ember-grounding.md) |
+| 14 | system-design | [Permissions, segregation of duties, and approval workflows](14-system-design-permissions-and-approvals.md) |
+| 15 | coding | [Duplicate detection across integrations](15-coding-duplicate-detection.md) |
+| 16 | coding | [Prepaid amortization engine](16-coding-prepaid-amortization.md) |
+| 17 | coding | [Evaluate the categorization model like an accountant](17-coding-model-evaluation.md) |
+| 18 | system-design | [Continuous close and autonomous reconciliation](18-system-design-continuous-close.md) |
+| 19 | ai-design | [The feedback loop that trains the accounting model](19-ai-design-model-feedback-loop.md) |
+| 20 | system-design | [Point-in-time reports, audit log, and who changed the books](20-system-design-point-in-time-and-audit.md) |
 
 ## Coverage map
 

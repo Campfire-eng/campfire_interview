@@ -27,3 +27,12 @@ optimistic concurrency on certify.
 
 **Common problems.** Certifying without snapshotting the balance. Variance as a
 free-text comment.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | The API is a styled table over rows. Certification does not snapshot the GL and supporting balances, so the certified numbers can drift after sign-off. Variance is a free-text comment rather than a computed figure. No notion of a preparer versus a reviewer. |
+| 2 | Endpoints exist to fetch a reconciliation, list its items, and certify it. Variance is computed, but balances are not frozen at certification until asked. Preparer and reviewer roles, reconciling item types, and period lock only come up when prompted. |
+| 3 | Fetch, list, and certify are designed with preparer and reviewer as two different people and balances frozen at certification. Reconciling items have types such as timing, error, and unrecorded, with attachments. Certification is blocked when the variance exceeds policy, and the interaction with period lock is handled. The two-cent and self-review follow-ups are answered cleanly. |
+| 4 | Everything in 3, plus the further material without prompting: continuous reconciliation versus a month-end packet, subledger identity across systems, templates per account type, roll-forward schedules, auditor export, and optimistic concurrency on certify. Tradeoffs are stated. |

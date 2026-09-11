@@ -25,28 +25,28 @@ exercises are based on real problems from our product.
 
 ## The questions
 
-| # | Question |
-| --- | --- |
-| 1 | [Post a journal that cannot unbalance the books](questions/01-journal-posting.md) |
-| 2 | [Trial balance and a P&L from the same lines](questions/02-trial-balance.md) |
-| 3 | [Schema for a real general ledger](questions/03-gl-schema.md) |
-| 4 | [Multi-entity consolidation without the spreadsheet](questions/04-consolidation.md) |
-| 5 | [Stripe: from webhook to native connector](questions/05-stripe-connector.md) |
-| 6 | [AI categorization review queue](questions/06-review-queue.md) |
-| 7 | [Score bank transactions against GL candidates](questions/07-bank-matching.md) |
-| 8 | [ASC 606 schema and recognition schedule](questions/08-asc-606.md) |
-| 9 | [Multi-currency: functional versus reporting](questions/09-multi-currency.md) |
-| 10 | [Period close as a state machine](questions/10-period-close.md) |
-| 11 | [Flux analysis pipeline](questions/11-flux-pipeline.md) |
-| 12 | [Account reconciliation workspace](questions/12-recon-workspace.md) |
-| 13 | [Ember: answers that can go in the audit file](questions/13-ember-grounding.md) |
-| 14 | [Permissions, segregation of duties, and approval workflows](questions/14-permissions-and-approvals.md) |
-| 15 | [Duplicate detection across integrations](questions/15-duplicate-detection.md) |
-| 16 | [Prepaid amortization engine](questions/16-prepaid-amortization.md) |
-| 17 | [Evaluate the categorization model like an accountant](questions/17-model-evaluation.md) |
-| 18 | [Continuous close and autonomous reconciliation](questions/18-continuous-close.md) |
-| 19 | [The feedback loop that trains the accounting model](questions/19-model-feedback-loop.md) |
-| 20 | [Point-in-time reports, audit log, and who changed the books](questions/20-point-in-time-and-audit.md) |
+| # | Type | Question |
+| --- | --- | --- |
+| 1 | coding | [Post a journal that cannot unbalance the books](questions/01-coding-journal-posting.md) |
+| 2 | coding | [Trial balance and a P&L from the same lines](questions/02-coding-trial-balance.md) |
+| 3 | schema | [Schema for a real general ledger](questions/03-schema-gl-schema.md) |
+| 4 | system-design | [Multi-entity consolidation without the spreadsheet](questions/04-system-design-consolidation.md) |
+| 5 | system-design | [Stripe: from webhook to native connector](questions/05-system-design-stripe-connector.md) |
+| 6 | product-design | [AI categorization review queue](questions/06-product-design-review-queue.md) |
+| 7 | coding | [Score bank transactions against GL candidates](questions/07-coding-bank-matching.md) |
+| 8 | schema | [ASC 606 schema and recognition schedule](questions/08-schema-asc-606.md) |
+| 9 | system-design | [Multi-currency: functional versus reporting](questions/09-system-design-multi-currency.md) |
+| 10 | coding | [Period close as a state machine](questions/10-coding-period-close.md) |
+| 11 | coding | [Flux analysis pipeline](questions/11-coding-flux-pipeline.md) |
+| 12 | product-design | [Account reconciliation workspace](questions/12-product-design-recon-workspace.md) |
+| 13 | ai-design | [Ember: answers that can go in the audit file](questions/13-ai-design-ember-grounding.md) |
+| 14 | system-design | [Permissions, segregation of duties, and approval workflows](questions/14-system-design-permissions-and-approvals.md) |
+| 15 | coding | [Duplicate detection across integrations](questions/15-coding-duplicate-detection.md) |
+| 16 | coding | [Prepaid amortization engine](questions/16-coding-prepaid-amortization.md) |
+| 17 | coding | [Evaluate the categorization model like an accountant](questions/17-coding-model-evaluation.md) |
+| 18 | system-design | [Continuous close and autonomous reconciliation](questions/18-system-design-continuous-close.md) |
+| 19 | ai-design | [The feedback loop that trains the accounting model](questions/19-ai-design-model-feedback-loop.md) |
+| 20 | system-design | [Point-in-time reports, audit log, and who changed the books](questions/20-system-design-point-in-time-and-audit.md) |
 
 The [questions index](questions/README.md) has the tags, how a session runs, and a
 coverage map showing which tracks each question serves.

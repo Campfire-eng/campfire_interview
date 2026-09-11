@@ -30,3 +30,12 @@ starts coding everything to Miscellaneous."
 
 **Common problems.** A chat sidebar as the review tool. No record of who accepted
 what. Auto-posting on by default.
+
+## Rubric
+
+| Score | What it looks like |
+| --- | --- |
+| 1 | The review tool is a chat sidebar. There is no record of who accepted what. Auto-posting is on by default, or suggestions post without a human approving. Undo is a silent edit. |
+| 2 | A suggestion list with accept, reject, edit, and paging is present, and who accepted what is recorded. Grouping, confidence with reasons, bulk accept, a keyboard flow, vendor history, and undo as reversal come up only when asked. Nothing is said about materiality or the model being wrong until prompted. |
+| 3 | Similar transactions are grouped, confidence is shown with reasons, and bulk accept works under a threshold. The flow is keyboard-first with vendor history in context. Nothing auto-posts above policy and undo is a reversal rather than a silent edit. The $50 auto-approve, reviewer disagreement, and Miscellaneous drift follow-ups are handled well. |
+| 4 | Everything in 3, plus the deeper material unprompted: materiality and risk cues such as new vendors, round-dollar amounts, period-end timing, and related parties, plus sampling of auto-approved items. The model that suggests is separated from the human who approves, and rejections feed learning without corrupting the chart of accounts. Empty, error, and partial-sync states are designed, and the candidate can say how the interface stays trustworthy when the model is wrong 8% of the time. |
