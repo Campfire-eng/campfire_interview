@@ -46,7 +46,7 @@ changes: period locks, permission changes, report generation, and automated acti
 
 ## Follow-ups
 
-- "They restated all of Q1 in July. How is that different from a late adjustment?"
+- "They restated the whole first quarter in July. How is that different from a late adjustment?"
 - "Delete the user who approved this reconciliation. Privacy law requires it."
 - "The AI assistant answered a question about January revenue last week. What did it see,
   and can you prove it?"

@@ -30,22 +30,25 @@ exercise folder has a README that explains the accounting background, the contra
 are implementing, what each test checks, and what we usually talk about afterwards.
 
 ```bash
-# Python — Q1, Q7, Q16, Q17
+# Python: four exercises
 pip install pytest
 (cd coding/python && pytest -q)
 
-# TypeScript — Q2, Q10
+# TypeScript: two exercises
 (cd coding/typescript && npm install && npm test)
 ```
 
-| Exercise | Question | AI |
-| --- | --- | --- |
-| [`python/journal_posting`](coding/python/journal_posting/) | Q1 — a journal that cannot unbalance the books | Off |
-| [`python/bank_matching`](coding/python/bank_matching/) | Q7 — reconciliation proposals | Off for the screen, on later |
-| [`python/prepaid_amortization`](coding/python/prepaid_amortization/) | Q16 — amortization schedule in whole cents | On |
-| [`python/categorization_eval`](coding/python/categorization_eval/) | Q17 — evaluating a GL-coding model | On |
-| [`typescript/trial_balance`](coding/typescript/trial_balance/) | Q2 — trial balance and P&L | Off |
-| [`typescript/period_close`](coding/typescript/period_close/) | Q10 — close as a state machine | Off |
+Each exercise is the starter for one question in the [question catalog](interview-kit.md).
+The catalog has twenty questions, numbered 1 to 20, and six of them have starters.
+
+| Exercise | Topic | Catalog question | AI |
+| --- | --- | --- | --- |
+| [`python/journal_posting`](coding/python/journal_posting/) | A journal that cannot unbalance the books | 1 | Off |
+| [`python/bank_matching`](coding/python/bank_matching/) | Reconciliation proposals | 7 | Off for the screen, on later |
+| [`python/prepaid_amortization`](coding/python/prepaid_amortization/) | Amortization schedule in whole cents | 16 | On |
+| [`python/categorization_eval`](coding/python/categorization_eval/) | Evaluating a GL-coding model | 17 | On |
+| [`typescript/trial_balance`](coding/typescript/trial_balance/) | Trial balance and P&L | 2 | Off |
+| [`typescript/period_close`](coding/typescript/period_close/) | Close as a state machine | 10 | Off |
 
 You are welcome to work through these before an interview. If you do, be ready to talk
 about the decisions you made. That is more useful to us than seeing the solution typed

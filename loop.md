@@ -64,9 +64,9 @@ the prompt, the follow-ups, and the rubric we score against. Which one you get d
 the role. Backend and platform roles usually get consolidation or multi-currency. AI and
 data roles usually get the continuous reconciliation pipeline or point-in-time reporting.
 Full-stack product roles usually get period close across many entities. For platform or
-security-leaning roles we sometimes use Q14 (permissions, segregation of duties,
-approvals) from the question catalog instead, and product-leaning roles may get Q6 review
-queue or Q12 reconciliation workspace.
+security-leaning roles we sometimes use the permissions and approvals question (number
+14 in the [question catalog](interview-kit.md)) instead, and product-leaning roles may get
+the review queue (6) or reconciliation workspace (12) question.
 
 We care about the invariants you name before you draw boxes, and about what you decide
 the system should not allow.
@@ -77,9 +77,9 @@ One hands-on exercise with the tests already in the repository:
 
 | Role | Exercise |
 | --- | --- |
-| Backend / full-stack | Q1 journal posting (Python) or Q2 trial balance (TypeScript) |
-| Product-leaning full-stack | Q10 period close (TypeScript) |
-| Data / AI | Q1 journal posting (Python) |
+| Backend / full-stack | Journal posting (Python) or trial balance (TypeScript) |
+| Product-leaning full-stack | Period close (TypeScript) |
+| Data / AI | Journal posting (Python) |
 
 You can read these exercises and their tests in [`coding/`](coding/) now, and you
 are welcome to try them beforehand. If you do, be ready to talk about the decisions you
@@ -87,8 +87,7 @@ made. That is more useful to us than seeing the solution typed out again.
 
 ### Programming exercise 2 — 45 minutes, AI allowed
 
-Q7 bank matching, Q16 prepaid amortization, Q17 model evaluation, or Q11 flux. Use the
-tools. We are interested in how you check that the output is correct, not in whether the
+Bank matching, prepaid amortization, or model evaluation, all in Python. Use the tools. We are interested in how you check that the output is correct, not in whether the
 first draft compiled. We will review the model's output together.
 
 ### Behavioral — 30 minutes
@@ -105,10 +104,10 @@ decision and how it was resolved, a time you had to learn a new domain from scra
 
 | Role | Design | Exercise 1 (no AI) | Exercise 2 (AI on) |
 | --- | --- | --- | --- |
-| Full-stack product | Q6 review queue or Q12 recon workspace | Q2 or Q10 | Q7 or Q16 |
-| Backend / platform | Q4 consolidation or Q14 permissions | Q1 | Q7 or Q16 |
-| Data engineering | Q20 audit and point-in-time | Q1 | Q7 or Q11 |
-| AI engineering | Q13 Ember grounding or Q19 feedback loop | Q1 | Q17 |
+| Full-stack product | Period close across many entities | Trial balance or period close | Bank matching or prepaid amortization |
+| Backend / platform | Consolidation or multi-currency | Journal posting | Bank matching or prepaid amortization |
+| Data engineering | Point-in-time reporting and audit log | Journal posting | Bank matching |
+| AI engineering | Continuous reconciliation pipeline | Journal posting | Model evaluation |
 
 Every track includes at least one exercise run without AI, so we can see how you work
 without the tools.
