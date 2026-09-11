@@ -7,9 +7,8 @@ tests. Our interviewers use the same material.
 We publish it because reading the questions ahead of time does not give you the answers.
 Campfire is an AI-native ERP. It covers the general ledger, multi-entity consolidation,
 bank reconciliation, ASC 606 revenue recognition, period close, and Ember, the assistant
-that answers questions about the books. The questions are about invariants and judgment
-calls. Even if you know we are going to ask about a $2.50 bank fee that is missing from
-the general ledger, you still have to decide what to do about it.
+that answers questions about the books. The questions are about judgment. Knowing the
+question in advance still leaves you to work through it.
 
 We hire for Python and TypeScript (Next.js / React). Every exercise uses one of those. The
 exercises are based on real problems from our product.
@@ -60,9 +59,8 @@ segregation of duties, and auditability.
 ## AI in the interview
 
 Some sessions are run without AI and some with it. Both are on purpose. The AI-off
-sessions let us see that you understand the domain yourself: why a journal must balance
-and what a locked period protects. In the AI-on sessions you should use the tools. We
-will review the output together, because finding the accounting mistakes in what a model
+sessions let us see that you understand the domain yourself. In the AI-on sessions you
+should use the tools. We will review the output together, because reviewing what a model
 produces is a large part of the job.
 
 [loop.md](loop.md) says which sessions are which.
@@ -70,6 +68,5 @@ produces is a large part of the job.
 ## Do you need to know accounting?
 
 No. Most people we hire did not, and several of these questions explain the concept in the
-prompt. What we need is that you take the domain seriously. A ledger has rules that the
-software has to follow, and arithmetic that is only close enough causes problems in an
-audit later. If that sounds interesting to you, you will probably enjoy these problems.
+prompt. What we need is that you take the domain seriously. If that sounds interesting to
+you, you will probably enjoy these problems.

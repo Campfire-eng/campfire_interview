@@ -1,8 +1,8 @@
 # What the process looks like
 
-Every stage uses the same domain. Books must balance, close must lock, and AI output must
-be reviewable. What changes from stage to stage is how we work together, not how hard the
-accounting gets. None of the stages use an unrelated algorithm puzzle.
+Every stage uses the same domain. What changes from stage to stage is how we work
+together, not the difficulty of the domain. None of the stages use an unrelated algorithm
+puzzle.
 
 The whole loop, in order:
 
@@ -32,18 +32,18 @@ Three things in half an hour, so we move quickly:
    the right bet. You are welcome to push back.
 2. **Technical.** A few questions about work you have done: a system you own, a bug you
    tracked down, a decision you would make differently now. We may take one of these into
-   the domain, for example what you would want a ledger to refuse to do.
+   the domain, for example what you would want the system to refuse to do.
 3. **Behavioral.** How you have handled disagreement, ambiguity, and being wrong. We want
-   to see empathy for controllers as users. They are not consumers, and they are not
-   developers. The questions come from [`behavioral/`](behavioral/), usually the
+   to see empathy for our users, who are accounting professionals rather than consumers
+   or developers. The questions come from [`behavioral/`](behavioral/), usually the
    Customer-Centric Innovation and Growth Mindset files.
 
 ## Virtual technical screen — 45 minutes, code review and bug fixing, no AI
 
 We give you a piece of code from the same domain as the exercises in
 [`exercises/`](exercises/), such as journal posting, trial balance, or period close. It
-looks like it works, but it has bugs in it. Some are easy to see. Others only show up as
-an unbalanced trial balance three months later. You review it the way you would review a
+looks like it works, but it has bugs in it. Some are easy to see. Others only show up
+later. You review it the way you would review a
 teammate's pull request: read it, tell us what is wrong and why it matters, and fix what
 you can in the time available.
 
@@ -51,8 +51,8 @@ The bugs break the invariants that the exercise READMEs describe, so reading tho
 beforehand is useful preparation. Knowing the problem in advance does not spoil anything,
 because we talk through your reasoning in the session.
 
-We pay attention to whether you find the bugs that corrupt the books before the ones that
-only look untidy, how you explain a defect to someone who did not write the code, and
+We pay attention to whether you find the bugs that produce wrong results before the ones
+that are only cosmetic, how you explain a defect to someone who did not write the code, and
 what you check before you call a fix done.
 
 ## Onsite — four sessions
@@ -85,7 +85,7 @@ made. That is more useful to us than seeing the solution typed out again.
 ### Programming exercise 2 — 45 minutes, AI allowed
 
 Q7 bank matching, Q16 prepaid amortization, Q17 model evaluation, or Q11 flux. Use the
-tools. We are interested in how you check that the books are right, not in whether the
+tools. We are interested in how you check that the output is correct, not in whether the
 first draft compiled. We will review the model's output together.
 
 ### Behavioral — 30 minutes
@@ -107,24 +107,20 @@ decision and how it was resolved, a time you had to learn a new domain from scra
 | Data engineering | Q20 audit and point-in-time | Q1 | Q7 or Q11 |
 | AI engineering | Q13 Ember grounding or Q19 feedback loop | Q1 | Q17 |
 
-Every track includes at least one ledger exercise run without AI. If you are going to
-build autonomous accounting, you need to understand double-entry yourself, because you
-are the one reviewing what the model produces.
+Every track includes at least one exercise run without AI, so we can see how you work
+without the tools.
 
 ## How we think about AI in the process
 
 The technical screen, the system design session, and the first programming exercise are
 run without AI. The second programming exercise allows it. Both are on purpose.
 
-In the AI-off sessions we are checking that you understand the domain model yourself. If
-a model writes the posting logic, we cannot tell whether you would have noticed that the
-journal did not balance.
+In the AI-off sessions we are checking that you understand the domain yourself. If a
+model writes the code, we cannot tell whether you would have noticed the mistakes in it.
 
 In the AI-on session the tools are allowed, and we want to see you use them well rather
 than avoid them. We look at your product sense, your review quality, and whether you
-catch the accounting mistakes a model can produce, such as plausible-looking code that
-uses floats for money, or an evaluation that reports a single accuracy number.
+catch the mistakes a model can produce.
 
-Speed with AI tools is useful, but it does not make up for mistakes in the debits and
-credits. We would rather see careful work that keeps the ledger correct, even if it
-covers less ground.
+Speed with AI tools is useful, but it does not make up for incorrect results. We would
+rather see careful, correct work, even if it covers less ground.

@@ -3,7 +3,7 @@
 These are the twenty problems we draw from. You will see four or five of them, not all
 twenty. We publish the whole set on purpose. None of the questions has a trick, and none
 of them rewards having seen the question before. We would rather you spend your
-preparation time reading about deferred revenue than guessing what we might ask.
+preparation time reading about the domain than guessing what we might ask.
 
 Everything here is in the same domain: an AI-native ERP with a general ledger,
 multi-entity consolidation, bank reconciliation, ASC 606 revenue recognition, period
@@ -12,9 +12,7 @@ Python and TypeScript / Next.js / React, because that is what we build in.
 
 You do not need to be an accountant. Several of these questions explain the accounting
 concept in the prompt itself, and in the live sessions we are glad to explain more. What
-we look for is whether you take the domain seriously. A ledger has invariants. If software
-breaks one of them, the result is wrong even if the rest works, and the error will show up
-later in an audit.
+we look for is whether you take the domain seriously.
 
 ## How a session runs
 
@@ -38,9 +36,8 @@ go. They are not a checklist you need to finish. Running out of time on them is 
 
 **On the AI-off sessions.** These sessions are not a statement that we dislike AI tooling.
 We build an AI product and we use these tools daily. They exist because we need to see
-that you hold the domain model yourself. We want to know that you understand why a
-journal must balance and what a locked period protects. That is the judgment you will use
-when you review what a model wrote.
+that you understand the domain yourself. That is the judgment you will use when you
+review what a model wrote.
 
 ---
 

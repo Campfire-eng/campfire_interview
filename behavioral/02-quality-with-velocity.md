@@ -4,8 +4,8 @@
 
 ## What we are listening for
 
-There is a real tension in this principle. A ledger cannot be "mostly right" and a close
-cannot be "roughly locked". At the same time, a startup that ships slowly falls behind.
+There is a real tension in this principle. Parts of our product have to be exactly right.
+At the same time, a startup that ships slowly falls behind.
 We want engineers who know which corners can be cut and which cannot, and who can make
 that call quickly and explain it to a teammate.
 

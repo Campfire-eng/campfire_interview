@@ -6,8 +6,8 @@
 ## What we are listening for
 
 Our customers are controllers and accounting teams. They are not consumers, they are not
-developers, and they are not us. An engineer who has never watched one do a month-end
-close is likely to build the wrong thing, however well it is built. We want people who go
+developers, and they are not us. An engineer who has never watched one work is likely to
+build the wrong thing, however well it is built. We want people who go
 and look, who can tell the difference between what a customer asks for and what they
 need, and who can argue for a feature on the customer's behalf, including when it is not
 what they would prefer to build.
@@ -23,8 +23,7 @@ The specific things we listen for:
 - Translating a request into the problem underneath it.
 - Saying no to a customer request in a considerate way, and being able to explain why.
 - Building something nobody asked for because the evidence said it mattered.
-- Empathy for a user under pressure, such as the controller at 11pm on the last day of
-  close.
+- Empathy for a user who is working under pressure or against a deadline.
 
 ## Questions
 
@@ -97,7 +96,8 @@ cannot say whether it was used. Every story ends with the customers loving it.
 
 ### 5. Tell me about a time a customer was frustrated with something you built. What did you do?
 
-**Why we ask it.** Controllers under close pressure are direct. We want to see how they
+**Why we ask it.** Our users are experts, and they are direct when something is not
+working. We want to see how they
 handle an unhappy expert user without getting defensive and without giving in on
 everything.
 
@@ -114,8 +114,8 @@ They fixed it but never followed up with the customer.
 
 ### 6. How do you learn what a user's job actually looks like when it is nothing like yours?
 
-**Why we ask it.** Most engineers we hire have never done a close. This question asks how
-they close that gap, and whether they think it needs closing.
+**Why we ask it.** Most engineers we hire have not done our users' job. This question
+asks how they learn what it involves, and whether they think that matters.
 
 **What a strong answer covers.** Concrete habits, such as reading support tickets, sitting
 in on onboarding, asking the customer-facing team, doing the workflow themselves in a

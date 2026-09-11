@@ -4,9 +4,8 @@
 
 ## What we are listening for
 
-An ERP is one product with many hands in it. The ledger, the bank feed, the close, the
-reporting, and Ember all have to agree with each other, and no one person holds all of
-it. We want engineers who make the people around them better, who treat a teammate's
+Our product has many parts and many people working on it. The parts all have to agree
+with each other, and no one person holds all of it. We want engineers who make the people around them better, who treat a teammate's
 failure as a shared one, and who can disagree strongly about the work without it becoming
 about the people.
 

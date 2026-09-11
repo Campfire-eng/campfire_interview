@@ -5,8 +5,8 @@
 
 ## What we are listening for
 
-We build the system a controller signs off on before the auditors arrive. If problems are
-hidden in how we work, they end up hidden in the product too. So we want people who share
+We build software that other people rely on to be correct. If problems are hidden in how
+we work, they end up hidden in the product too. So we want people who share
 bad news early, in writing, with the people it affects, and who describe their own
 mistakes in the first person without being asked.
 
@@ -97,9 +97,8 @@ fairly.
 
 ### 5. Tell me about a time you found out something was wrong that nobody else had noticed yet. What did you do?
 
-**Why we ask it.** In accounting software, small differences matter. A reconciliation that
-is off by $2.50 is still worth raising. We need people who will mention a problem even
-when it is awkward to bring up.
+**Why we ask it.** Small problems matter in our product. We need people who will mention
+a problem even when it is awkward to bring up.
 
 **What a strong answer covers.** They checked enough to be sure it was real, then raised
 it quickly with the right people, in a form others could verify. They did not hold it
