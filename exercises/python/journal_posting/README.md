@@ -5,11 +5,10 @@
 ## Background
 
 A general ledger records every economic event as a **journal**: a memo plus two or more
-**lines**. Each line names an account and moves money in one direction — a *debit* or a
-*credit*. The rule that makes the whole system self-checking is that within a single
-journal, total debits must equal total credits. A journal that violates this is not a
-slightly-wrong journal; it is a corrupt ledger, and every report built on top of it —
-trial balance, P&L, balance sheet — silently becomes wrong.
+**lines**. Each line names an account and moves money in one direction, as a debit or a
+credit. Within a single journal, total debits must equal total credits. This is the rule
+that makes the whole system self-checking. If a journal breaks it, the ledger is wrong,
+and every report built on the ledger (trial balance, P&L, balance sheet) is wrong too.
 
 A cash sale of $100 looks like this:
 
@@ -23,8 +22,8 @@ should not be any in your solution.
 
 ## Your task
 
-Implement `Ledger.post_journal` in `ledger.py` so that it either stores a valid journal
-and returns it, or raises `PostingError` and leaves the ledger untouched.
+Implement `Ledger.post_journal` in `ledger.py`. It should either store a valid journal
+and return it, or raise `PostingError` and leave the ledger unchanged.
 
 ```python
 def post_journal(self, lines: list[JournalLine], memo: str = "") -> Journal:
@@ -32,24 +31,24 @@ def post_journal(self, lines: list[JournalLine], memo: str = "") -> Journal:
 
 The surrounding types are already written for you:
 
-- `JournalLine(account_id: str, debit_cents: int, credit_cents: int)` — frozen dataclass.
+- `JournalLine(account_id: str, debit_cents: int, credit_cents: int)` is a frozen dataclass.
 - `Journal(id: str, lines: tuple[JournalLine, ...], memo: str)`.
-- `PostingError(ValueError)` — raise this for anything you reject.
-- `Ledger.journals()` — already implemented; returns a copy of what has been posted.
-- `Ledger._next_id` — a counter you may use to mint journal ids. Any scheme works as long
+- `PostingError(ValueError)` is what to raise for anything you reject.
+- `Ledger.journals()` is already implemented. It returns a copy of what has been posted.
+- `Ledger._next_id` is a counter you may use to mint journal ids. Any scheme works as long
   as the id is non-empty and unique.
 
 ### Rules the tests enforce
 
-1. **Balanced journals post.** Sum of `debit_cents` across lines equals sum of
+1. **Balanced journals post.** The sum of `debit_cents` across lines equals the sum of
    `credit_cents`. On success, return the stored `Journal` with a non-empty `id`, and
    `ledger.journals()` grows by one.
-2. **Unbalanced journals are rejected.** Raise `PostingError`, and post *nothing* — a
-   rejected journal must not appear in `journals()` even partially.
-3. **Empty journals are rejected.** A journal with no lines is meaningless.
+2. **Unbalanced journals are rejected.** Raise `PostingError` and post nothing. A
+   rejected journal must not appear in `journals()`, even partially.
+3. **Empty journals are rejected.** A journal with no lines has no meaning.
 4. **A single line cannot be both a debit and a credit.** `JournalLine("cash", 5000, 5000)`
-   is not a zero-effect line, it is a modelling error, and it happens to keep the journal
-   "balanced" — which is exactly why it needs an explicit check.
+   is not a zero-effect line. It is a modelling error. It also keeps the journal
+   "balanced", which is why it needs its own check.
 
 ## Running the tests
 
@@ -59,19 +58,19 @@ pytest -q
 ```
 
 All four tests fail with `NotImplementedError` until you write the method. Start by
-reading `test_ledger.py`; it is the spec.
+reading `test_ledger.py`. It is the spec.
 
 ## What we care about
 
-The invariant should live in the posting path as a hard failure, not in a comment or a
-docstring or the caller. We are interested in how you name and structure the validation,
-what error information a caller gets back, and whether the ledger is genuinely unchanged
-after a rejection. Talk through your reasoning as you go — how you decide what to check
-is more interesting to us than how fast you type it.
+The balance check should live in the posting path and fail hard. It should not live in a
+comment, a docstring, or the caller. We want to see how you name and structure the
+validation, what error information a caller gets back, and whether the ledger is really
+unchanged after a rejection. Talk through your reasoning as you go. How you decide what to
+check matters more to us than how fast you type.
 
 ## Where the conversation usually goes
 
-Once the tests are green, expect to discuss some of these out loud. You do not need to
+Once the tests pass, we will usually talk through some of these. You do not need to
 implement them unless we ask:
 
 - The same Stripe charge arrives twice and posts two identical journals. How do you make
@@ -83,6 +82,6 @@ implement them unless we ask:
 
 ## Constraints
 
-Please use integer cents throughout, never floats. Do not "helpfully" rebalance a journal
-by inserting a plug line to make it fit, and do not treat validation as something the UI
-will handle. This exercise is run without AI assistance — language documentation is fine.
+Please use integer cents throughout, never floats. Do not rebalance a journal by
+inserting a plug line to make it fit, and do not leave validation to the UI. This
+exercise is run without AI assistance. Language documentation is fine.

@@ -1,7 +1,7 @@
 # Python exercises
 
-Four self-contained exercises. Each folder holds a starter module, a test file that acts
-as the specification, and a README describing the accounting problem and the contract you
+Four self-contained exercises. Each folder has a starter module, a test file that acts as
+the specification, and a README that explains the accounting problem and the contract you
 are implementing. Nothing depends on anything outside its own folder.
 
 | Folder | Exercise | AI |
@@ -33,11 +33,11 @@ cd exercises/python/journal_posting
 pytest -q                        # also fine
 ```
 
-Every suite starts red with `NotImplementedError`. That is intentional — the failing test
-is where you find out what the function is supposed to do.
+Every suite starts red with `NotImplementedError`. That is intentional. The failing test
+tells you what the function is supposed to do.
 
 ## Before you start
 
 Read the exercise README first, then the test file, then the starter module. Money is
-integer cents in all four exercises. If something in the spec is genuinely ambiguous, ask;
-deciding what to clarify is part of the exercise rather than a distraction from it.
+integer cents in all four exercises. If something in the spec is unclear, ask. Deciding
+what to clarify is part of the exercise.

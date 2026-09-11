@@ -1,19 +1,18 @@
 # Campfire interview kit
 
-This is everything we use to interview engineers at Campfire, published in full: the
-questions, the process, the behavioral interview, and six exercises with runnable failing
-tests. Nothing here is
-withheld, and there is no hidden version.
+This repository has the material we use to interview engineers at Campfire: the
+questions, how the process works, the behavioral interview, and six coding exercises with
+tests. Our interviewers use the same material.
 
-We do that because our problems are not the kind you can spoil by reading about them in
-advance. Campfire is an AI-native ERP — general ledger, multi-entity consolidation, bank
-reconciliation, ASC 606 revenue recognition, period close, and Ember, the assistant that
-answers questions about the books. The interesting parts are the invariants and the
-judgment calls, and knowing what we are going to ask does not tell you what you would do
-about a $2.50 bank fee that never made it into the general ledger.
+We publish it because reading the questions ahead of time does not give you the answers.
+Campfire is an AI-native ERP. It covers the general ledger, multi-entity consolidation,
+bank reconciliation, ASC 606 revenue recognition, period close, and Ember, the assistant
+that answers questions about the books. The questions are about invariants and judgment
+calls. Even if you know we are going to ask about a $2.50 bank fee that is missing from
+the general ledger, you still have to decide what to do about it.
 
-We hire on **Python** and **TypeScript (Next.js / React)**. Every exercise is in one of
-those. None of them are LeetCode.
+We hire for Python and TypeScript (Next.js / React). Every exercise uses one of those. The
+exercises are based on real problems from our product.
 
 ## What's in here
 
@@ -26,10 +25,9 @@ those. None of them are LeetCode.
 
 ## Try the exercises
 
-Every starter ships with failing tests, so the first thing you do is read the spec. Each
-exercise folder has a README that explains the accounting background, the exact contract
-you are implementing, what each test is checking, and where the conversation usually goes
-afterwards.
+Every starter comes with failing tests, so the first step is to read the spec. Each
+exercise folder has a README that explains the accounting background, the contract you
+are implementing, what each test checks, and what we usually talk about afterwards.
 
 ```bash
 # Python — Q1, Q7, Q16, Q17
@@ -49,28 +47,29 @@ pip install pytest
 | [`typescript/trial_balance`](exercises/typescript/trial_balance/) | Q2 — trial balance and P&L | Off |
 | [`typescript/period_close`](exercises/typescript/period_close/) | Q10 — close as a state machine | Off |
 
-You are welcome to work through these before an interview. If you do, come ready to talk
-about the decisions you made rather than to re-type the solution.
+You are welcome to work through these before an interview. If you do, be ready to talk
+about the decisions you made. That is more useful to us than seeing the solution typed
+out again.
 
 ## What we cover
 
 System design, schema design, product engineering, backend engineering, data engineering,
-and AI engineering — plus the controls work an ERP forces on you: permissions, segregation
-of duties, and auditability.
+and AI engineering. We also cover the controls work that comes with an ERP: permissions,
+segregation of duties, and auditability.
 
 ## AI in the interview
 
-Some sessions are run **without AI** and some **with it**, and both are on purpose. The
-AI-off sessions exist so we can see that you personally hold the domain model — that you
-know why a journal must balance and what a locked period protects. The AI-on sessions are
-genuinely AI-on: use the tools, and expect us to review the output together, because
-catching the accounting bug a model confidently shipped is the actual job.
+Some sessions are run without AI and some with it. Both are on purpose. The AI-off
+sessions let us see that you understand the domain yourself: why a journal must balance
+and what a locked period protects. In the AI-on sessions you should use the tools. We
+will review the output together, because finding the accounting mistakes in what a model
+produces is a large part of the job.
 
 [loop.md](loop.md) says which sessions are which.
 
 ## Do you need to know accounting?
 
 No. Most people we hire did not, and several of these questions explain the concept in the
-prompt. What we need is that you treat the domain as real. A ledger has invariants that
-software cannot negotiate with, and "close enough" arithmetic ends up in someone's audit
-file. If that sounds interesting rather than tedious, you will enjoy these problems.
+prompt. What we need is that you take the domain seriously. A ledger has rules that the
+software has to follow, and arithmetic that is only close enough causes problems in an
+audit later. If that sounds interesting to you, you will probably enjoy these problems.

@@ -4,21 +4,21 @@
 
 ## Background
 
-A model looks at each incoming transaction and proposes which GL account it belongs to —
-`travel`, `meals`, `software`, and so on — with a confidence score. Anything at or above an
+A model looks at each incoming transaction and proposes which GL account it belongs to,
+such as `travel`, `meals`, or `software`, with a confidence score. Anything at or above an
 **auto-approve threshold** posts straight to the books with no human involvement.
 Everything below it goes into a review queue for a controller.
 
-That threshold is the entire product decision. Set it high and you have built a slightly
-faster spreadsheet, because humans still review everything. Set it low and wrong numbers
-land in the general ledger unseen and end up in a board pack.
+That threshold is the main product decision. Set it high and humans still review
+everything, so the tool saves little time. Set it low and wrong numbers land in the
+general ledger without review and can end up in a board pack.
 
-The trap in this exercise is that ordinary ML metrics do not describe the risk. In the
-fixture data, three of four predictions clear a 0.90 threshold and two of those three are
-correct — 67% accuracy on the auto-approved population, which sounds survivable. But the
-single wrong one is a **$5,000** transaction, and the other two are $100 and $30 combined.
-Nearly all of the dollars that posted without review posted wrong. Counting mistakes and
-weighing mistakes give you opposite readings of the same model.
+The difficulty in this exercise is that ordinary ML metrics do not describe the risk. In
+the fixture data, three of four predictions clear a 0.90 threshold and two of those three
+are correct. That is 67% accuracy on the auto-approved population, which sounds
+acceptable. But the one wrong prediction is a $5,000 transaction, and the other two are
+$100 and $30 combined. Nearly all of the dollars that posted without review posted wrong.
+Counting mistakes and weighing mistakes give you opposite readings of the same model.
 
 ## Your task
 
@@ -35,7 +35,7 @@ def evaluate(
 Inputs:
 
 - `Prediction(txn_id, amount_cents, predicted_account, confidence)`
-- `Label(txn_id, actual_account)` — ground truth, in practice a human's correction.
+- `Label(txn_id, actual_account)` is the ground truth, in practice a human's correction.
 
 Return an `EvalReport` with:
 
@@ -48,8 +48,8 @@ Return an `EvalReport` with:
 | `auto_approved_error_cents` | Total `amount_cents` of auto-approved predictions that were **wrong**. |
 | `per_account` | `dict[str, AccountMetrics]` of precision and recall. |
 
-The population split matters: **precision and recall span all predictions**, while the
-four auto-approve fields describe **only** the at-or-above-threshold population.
+The population split matters: precision and recall span all predictions, while the
+four auto-approve fields describe only the at-or-above-threshold population.
 
 Precision for an account is (predictions of that account that were correct) / (all
 predictions of that account). Recall is (predictions of that account that were correct) /
@@ -63,10 +63,11 @@ Using the fixture in `test_eval.py` at a 0.90 threshold: `auto_approved_count ==
 recall, `meals` is 1.0 / 0.5, `software` is 1.0 / 1.0.
 
 Raising the threshold to 0.99 shrinks auto-approval to a single prediction, which happens
-to be correct — accuracy 1.0 and error of 0 cents, bought with much lower coverage.
+to be correct: accuracy 1.0 and error of 0 cents, at the cost of much lower coverage.
 
-A prediction with no matching label raises `ValueError`. Silently scoring against a
-partial label set is how an evaluation ends up flattering a model.
+A prediction with no matching label raises `ValueError`. Scoring against a partial label
+set without saying so is one way an evaluation ends up making a model look better than
+it is.
 
 ## Running the tests
 
@@ -78,20 +79,21 @@ pytest categorization_eval -q
 ## What we care about
 
 Getting the arithmetic right is the first half. The second half is the conversation the
-numbers are supposed to support: **where do you set the threshold, and what do you tell
-the controller it costs them?** Have an answer that refers to review capacity and to
+numbers are meant to support: where do you set the threshold, and what do you tell the
+controller it costs them? Have an answer that refers to review capacity and to
 materiality, not just to a curve.
 
-Watch the divide-by-zero cases — an account that appears in the labels but was never
-predicted, or vice versa.
+Watch the divide-by-zero cases, such as an account that appears in the labels but was
+never predicted, or the other way around.
 
-AI assistance is allowed. Metric code is exactly the kind of thing a model will write
-confidently and subtly wrong, so read it like you are reviewing a colleague's pull request.
+AI assistance is allowed. Metric code is the kind of thing a model can write in a way that
+looks right but is slightly wrong, so read it the way you would review a colleague's pull
+request.
 
 ## Where the conversation usually goes
 
-- Accuracy is 97% and the controller is furious. What happened?
-- Labels only exist for items a human reviewed — and you stopped showing them the
+- Accuracy is 97% and the controller is upset. What happened?
+- Labels only exist for items a human reviewed, and you stopped showing them the
   confident ones. What does that do to next quarter's evaluation?
 - A customer renumbers their chart of accounts mid-year.
 - Does 0.95 confidence actually mean 95%, and how would you find out?
@@ -100,5 +102,5 @@ confidently and subtly wrong, so read it like you are reviewing a colleague's pu
 
 ## Constraints
 
-A single accuracy number is not an evaluation. Any metric that ignores transaction amount
-is describing a different business than this one.
+A single accuracy number is not a full evaluation. Any metric that ignores transaction
+amount does not describe this business.
