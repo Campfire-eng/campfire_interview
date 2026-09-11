@@ -2,9 +2,9 @@
 
 The behavioral sessions in the loop are part of the hiring manager screen and the
 30-minute onsite behavioral interview. They cover the five principles we work by. There is
-one file per principle. Each file explains what we listen for, then gives the questions we
-draw from, why we ask each one, what a strong answer covers, and where the conversation
-usually goes.
+one file per principle, and one more on working with AI. Each file explains what we listen
+for, then gives the questions we draw from, why we ask each one, what a strong answer
+covers, and where the conversation usually goes.
 
 | Principle | File |
 | --- | --- |
@@ -13,6 +13,7 @@ usually goes.
 | Customer-Centric Innovation | [03-customer-centric-innovation.md](03-customer-centric-innovation.md) |
 | Growth Mindset | [04-growth-mindset.md](04-growth-mindset.md) |
 | Collaborative Excellence | [05-collaborative-excellence.md](05-collaborative-excellence.md) |
+| Working with AI | [06-working-with-ai.md](06-working-with-ai.md) |
 
 ## How we run these
 
@@ -22,6 +23,10 @@ about. The hiring manager screen tends to cover Customer-Centric Innovation and 
 Mindset. The onsite behavioral tends to cover Transparent Accountability and Collaborative
 Excellence, because by then we have seen you code and want to know what you are like to
 work with.
+
+Every loop also covers how you use AI tools and what you think has changed about the job.
+The questions for that are in [06-working-with-ai.md](06-working-with-ai.md), and each
+principle file also has one question and some follow-ups on the same topic.
 
 Every question asks about something that happened. "What would you do if" tells us what
 you think the right answer is. "Tell me about a time" tells us what you did, and those can

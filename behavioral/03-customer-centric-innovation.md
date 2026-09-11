@@ -123,7 +123,24 @@ sandbox, or reading what practitioners read. An example of something they learne
 way that changed what they built. Awareness of how much they still do not know.
 
 **Follow-ups.** "Give me an example of something you got wrong because you did not
-understand the job." "What do you do in your first month on a new domain?"
+understand the job." "What do you do in your first month on a new domain?" "Have you used
+AI tools to learn a domain, and where did they get it wrong?"
 
 **Weaker answers.** They rely entirely on the product manager. They assume the job is
 simpler than it is. They have no example.
+
+### 7. Tell me about a time you used AI to understand a customer's problem or domain faster. What did it get right, and what did it get wrong?
+
+**Why we ask it.** AI tools are useful for learning an unfamiliar domain quickly, and they
+are also confidently wrong about details that matter to an expert user. We want to see
+them use the tools and still check with the customer.
+
+**What a strong answer covers.** A specific problem or domain. What they asked the tool
+and what it gave them. Something it got wrong or oversimplified, and how they found out.
+How they checked with a real user or an expert before building.
+
+**Follow-ups.** "What did it get wrong?" "How did you find out?" "Did you talk to a user
+as well?" "What would you have missed without the tool?"
+
+**Weaker answers.** The tool was the only source. They cannot name anything it got wrong.
+They built from the tool's description without checking with anyone.

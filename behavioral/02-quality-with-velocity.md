@@ -119,7 +119,25 @@ of each. An example of a change they undertested and regretted.
 
 **Follow-ups.** "Give me an example of a change you shipped with no tests and were right
 to." "Give me one where you were wrong." "How do you handle a teammate who tests less
-than you think they should?"
+than you think they should?" "Do you test generated code differently from code you wrote
+by hand?"
 
 **Weaker answers.** A single rule for everything. No example of undertesting. Testing
 described as a gate imposed by others.
+
+### 7. How have AI tools changed how fast you expect to work, and where has that caused quality problems?
+
+**Why we ask it.** These tools change what a reasonable pace looks like. We want to see
+whether they have kept the same standard for correctness while moving faster.
+
+**What a strong answer covers.** A concrete before and after: what a task took, what it
+takes now. Where speed has come from, such as boilerplate, tests, or unfamiliar APIs.
+Where it has caused a problem, such as a large change nobody fully read, or a quick fix
+that was wrong in a way the tool could not see. What they do now to keep quality up at
+the faster pace.
+
+**Follow-ups.** "Give me an example of a task that got faster." "Give me one where the
+speed caused a problem." "What do you still do slowly on purpose?"
+
+**Weaker answers.** Everything is faster and nothing has gone wrong. They do not use the
+tools and have not thought about it. The speed came from skipping review.

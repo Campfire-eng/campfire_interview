@@ -35,7 +35,8 @@ as a strawman. How it got decided: evidence, a prototype, an agreed decider. Wha
 after losing, if they lost. The relationship survived, and they can say how.
 
 **Follow-ups.** "Make their argument for me." "Who decided, and how?" "Were you right?"
-"How did you work together the month after?"
+"How did you work together the month after?" "Did AI tools play any part in how the
+disagreement was settled, for example a quick prototype?"
 
 **Weaker answers.** The other person was simply wrong. It was resolved by escalation with
 no attempt to resolve it directly. It was never resolved. They no longer work with that
@@ -136,3 +137,20 @@ bother you?"
 
 **Weaker answers.** They kept the credit. The uncredited story is told with lingering
 anger. They have never paid attention to who gets credit.
+
+### 8. Tell me about a disagreement on your team about how AI tools should be used. How was it resolved?
+
+**Why we ask it.** Teams are still working out shared standards for these tools. We want
+people who can help a team agree on one rather than each person doing their own thing.
+
+**What a strong answer covers.** A specific disagreement: how much generated code is
+acceptable in a pull request, whether reviewers need to know what was generated, how a
+junior engineer should use the tools while learning. What they proposed. What the team
+agreed to, and whether it held.
+
+**Follow-ups.** "What was the other view?" "What did the team agree to?" "Does the
+agreement still hold?" "How do you help a new engineer learn fundamentals when the tool
+will do the work for them?"
+
+**Weaker answers.** They avoided the conversation. Everyone should use the tools the way
+they do. There was no agreement and each person kept doing their own thing.

@@ -97,7 +97,8 @@ such as giving hard feedback, estimating, writing, reading code they did not wri
 listening. Concrete actions in the last month. Some way they will know if it is working.
 
 **Follow-ups.** "What did you do about it this month?" "How will you know it worked?"
-"Who knows you are working on it?"
+"Who knows you are working on it?" "Is there something AI tools have made you better at,
+or worse at?"
 
 **Weaker answers.** A technology on their list to learn. A strength presented as a
 weakness. They have nothing in progress.
@@ -117,3 +118,19 @@ let them fail?" "Where are they now?"
 
 **Weaker answers.** Helping meant doing it for them. The story is about the candidate's
 generosity rather than the other person's growth. There is no outcome.
+
+### 7. Tell me about a skill you have had to relearn or rethink because of AI tools.
+
+**Why we ask it.** The job is changing, and people who keep up are rethinking how they
+work rather than just adding a tool. We want to see that reflection.
+
+**What a strong answer covers.** A specific skill: writing code from scratch, reading
+code they did not write, specifying a task precisely, reviewing, debugging output they
+did not produce. How their approach has changed. Something they have chosen to keep
+practicing by hand, and why. Something they have let go of.
+
+**Follow-ups.** "What do you still do by hand on purpose?" "What have you stopped doing?"
+"How do you keep your own judgment sharp when the tool does the first draft?"
+
+**Weaker answers.** Nothing has changed for them. They have stopped practicing everything
+the tool can do. The answer is about tools rather than about their own skills.
