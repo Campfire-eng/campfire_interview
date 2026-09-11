@@ -17,11 +17,39 @@ exercises are based on real problems from our product.
 
 | Path | What it is |
 | --- | --- |
-| [interview-kit.md](interview-kit.md) | All twenty questions: the problem, why we ask it, what a strong answer covers, and the follow-ups |
+| [questions/](questions/) | All twenty questions, one file each: the problem, why we ask it, what a strong answer covers, and the follow-ups |
 | [loop.md](loop.md) | The stages of the process and what happens in each one |
 | [coding/](coding/) | Six starter folders with failing tests, each with its own detailed README |
 | [system-design/](system-design/) | Five system design challenges, each with a prompt, background, follow-ups, and a rubric |
 | [behavioral/](behavioral/) | The behavioral interview: one file per core principle, with the questions we ask and what we listen for |
+
+## The questions
+
+| # | Question |
+| --- | --- |
+| 1 | [Post a journal that cannot unbalance the books](questions/01-journal-posting.md) |
+| 2 | [Trial balance and a P&L from the same lines](questions/02-trial-balance.md) |
+| 3 | [Schema for a real general ledger](questions/03-gl-schema.md) |
+| 4 | [Multi-entity consolidation without the spreadsheet](questions/04-consolidation.md) |
+| 5 | [Stripe: from webhook to native connector](questions/05-stripe-connector.md) |
+| 6 | [AI categorization review queue](questions/06-review-queue.md) |
+| 7 | [Score bank transactions against GL candidates](questions/07-bank-matching.md) |
+| 8 | [ASC 606 schema and recognition schedule](questions/08-asc-606.md) |
+| 9 | [Multi-currency: functional versus reporting](questions/09-multi-currency.md) |
+| 10 | [Period close as a state machine](questions/10-period-close.md) |
+| 11 | [Flux analysis pipeline](questions/11-flux-pipeline.md) |
+| 12 | [Account reconciliation workspace](questions/12-recon-workspace.md) |
+| 13 | [Ember: answers that can go in the audit file](questions/13-ember-grounding.md) |
+| 14 | [Permissions, segregation of duties, and approval workflows](questions/14-permissions-and-approvals.md) |
+| 15 | [Duplicate detection across integrations](questions/15-duplicate-detection.md) |
+| 16 | [Prepaid amortization engine](questions/16-prepaid-amortization.md) |
+| 17 | [Evaluate the categorization model like an accountant](questions/17-model-evaluation.md) |
+| 18 | [Continuous close and autonomous reconciliation](questions/18-continuous-close.md) |
+| 19 | [The feedback loop that trains the accounting model](questions/19-model-feedback-loop.md) |
+| 20 | [Point-in-time reports, audit log, and who changed the books](questions/20-point-in-time-and-audit.md) |
+
+The [questions index](questions/README.md) has the tags, how a session runs, and a
+coverage map showing which tracks each question serves.
 
 ## Try the exercises
 
@@ -38,7 +66,7 @@ pip install pytest
 (cd coding/typescript && npm install && npm test)
 ```
 
-Each exercise is the starter for one question in the [question catalog](interview-kit.md).
+Each exercise is the starter for one question in the [question catalog](questions/).
 The catalog has twenty questions, numbered 1 to 20, and six of them have starters.
 
 | Exercise | Topic | Catalog question | AI |

@@ -65,7 +65,7 @@ the role. Backend and platform roles usually get consolidation or multi-currency
 data roles usually get the continuous reconciliation pipeline or point-in-time reporting.
 Full-stack product roles usually get period close across many entities. For platform or
 security-leaning roles we sometimes use the permissions and approvals question (number
-14 in the [question catalog](interview-kit.md)) instead, and product-leaning roles may get
+14 in the [question catalog](questions/)) instead, and product-leaning roles may get
 the review queue (6) or reconciliation workspace (12) question.
 
 We care about the invariants you name before you draw boxes, and about what you decide
