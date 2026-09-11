@@ -62,7 +62,7 @@ a period that was never in `closing` is your decision, and we will ask you to ex
 ## Running the tests
 
 ```bash
-cd exercises/typescript
+cd coding/typescript
 npm install
 npx tsx --test period_close/period_close.test.ts
 ```

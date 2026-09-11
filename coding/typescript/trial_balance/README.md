@@ -75,7 +75,7 @@ based on the sign of the net. An account is not both a debit and a credit at onc
 ## Running the tests
 
 ```bash
-cd exercises/typescript
+cd coding/typescript
 npm install
 npx tsx --test trial_balance/trial_balance.test.ts
 ```

@@ -25,11 +25,11 @@ pip install pytest
 these work:
 
 ```bash
-cd exercises/python
+cd coding/python
 pytest -q                        # everything
 pytest journal_posting -q        # one exercise
 
-cd exercises/python/journal_posting
+cd coding/python/journal_posting
 pytest -q                        # also fine
 ```
 

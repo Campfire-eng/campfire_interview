@@ -15,7 +15,7 @@ Node 18 or newer. Tests run on the built-in `node:test` runner through `tsx`, so
 no Jest or Vitest configuration to learn.
 
 ```bash
-cd exercises/typescript
+cd coding/typescript
 npm install
 ```
 

@@ -41,7 +41,7 @@ Three things in half an hour, so we move quickly:
 ## Virtual technical screen — 45 minutes, code review and bug fixing, no AI
 
 We give you a piece of code from the same domain as the exercises in
-[`exercises/`](exercises/), such as journal posting, trial balance, or period close. It
+[`coding/`](coding/), such as journal posting, trial balance, or period close. It
 looks like it works, but it has bugs in it. Some are easy to see. Others only show up
 later. You review it the way you would review a
 teammate's pull request: read it, tell us what is wrong and why it matters, and fix what
@@ -78,7 +78,7 @@ One hands-on exercise with the tests already in the repository:
 | Product-leaning full-stack | Q10 period close (TypeScript) |
 | Data / AI | Q1 journal posting (Python) |
 
-You can read these exercises and their tests in [`exercises/`](exercises/) now, and you
+You can read these exercises and their tests in [`coding/`](coding/) now, and you
 are welcome to try them beforehand. If you do, be ready to talk about the decisions you
 made. That is more useful to us than seeing the solution typed out again.
 

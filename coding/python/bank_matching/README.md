@@ -65,7 +65,7 @@ deliverable. A proposal the controller cannot interpret is not usable.
 ## Running the tests
 
 ```bash
-cd exercises/python/bank_matching
+cd coding/python/bank_matching
 pytest -q
 ```
 

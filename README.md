@@ -19,7 +19,7 @@ exercises are based on real problems from our product.
 | --- | --- |
 | [interview-kit.md](interview-kit.md) | All twenty questions: the problem, why we ask it, what a strong answer covers, and the follow-ups |
 | [loop.md](loop.md) | The stages of the process and what happens in each one |
-| [exercises/](exercises/) | Six starter folders with failing tests, each with its own detailed README |
+| [coding/](coding/) | Six starter folders with failing tests, each with its own detailed README |
 | [behavioral/](behavioral/) | The behavioral interview: one file per core principle, with the questions we ask and what we listen for |
 
 ## Try the exercises
@@ -31,20 +31,20 @@ are implementing, what each test checks, and what we usually talk about afterwar
 ```bash
 # Python — Q1, Q7, Q16, Q17
 pip install pytest
-(cd exercises/python && pytest -q)
+(cd coding/python && pytest -q)
 
 # TypeScript — Q2, Q10
-(cd exercises/typescript && npm install && npm test)
+(cd coding/typescript && npm install && npm test)
 ```
 
 | Exercise | Question | AI |
 | --- | --- | --- |
-| [`python/journal_posting`](exercises/python/journal_posting/) | Q1 — a journal that cannot unbalance the books | Off |
-| [`python/bank_matching`](exercises/python/bank_matching/) | Q7 — reconciliation proposals | Off for the screen, on later |
-| [`python/prepaid_amortization`](exercises/python/prepaid_amortization/) | Q16 — amortization schedule in whole cents | On |
-| [`python/categorization_eval`](exercises/python/categorization_eval/) | Q17 — evaluating a GL-coding model | On |
-| [`typescript/trial_balance`](exercises/typescript/trial_balance/) | Q2 — trial balance and P&L | Off |
-| [`typescript/period_close`](exercises/typescript/period_close/) | Q10 — close as a state machine | Off |
+| [`python/journal_posting`](coding/python/journal_posting/) | Q1 — a journal that cannot unbalance the books | Off |
+| [`python/bank_matching`](coding/python/bank_matching/) | Q7 — reconciliation proposals | Off for the screen, on later |
+| [`python/prepaid_amortization`](coding/python/prepaid_amortization/) | Q16 — amortization schedule in whole cents | On |
+| [`python/categorization_eval`](coding/python/categorization_eval/) | Q17 — evaluating a GL-coding model | On |
+| [`typescript/trial_balance`](coding/typescript/trial_balance/) | Q2 — trial balance and P&L | Off |
+| [`typescript/period_close`](coding/typescript/period_close/) | Q10 — close as a state machine | Off |
 
 You are welcome to work through these before an interview. If you do, be ready to talk
 about the decisions you made. That is more useful to us than seeing the solution typed

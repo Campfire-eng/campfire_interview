@@ -50,7 +50,7 @@ review what a model wrote.
 | Format | Pair |
 | AI | **Off** |
 | Time | 45 min |
-| Starter | `exercises/python/journal_posting` |
+| Starter | `coding/python/journal_posting` |
 
 **The problem.** Implement `post_journal(lines) -> Journal`. Each line has `account_id`,
 `debit_cents`, and `credit_cents` as non-negative integers. Reject anything that would
@@ -88,7 +88,7 @@ input.
 | Format | Pair |
 | AI | **Off** |
 | Time | 45 min |
-| Starter | `exercises/typescript/trial_balance` |
+| Starter | `coding/typescript/trial_balance` |
 
 **The problem.** Given accounts (`id`, `name`, `type`) and posted lines, return a trial
 balance as of a date and an income statement for a period. Types are
@@ -273,7 +273,7 @@ what. Auto-posting on by default.
 | Format | Pair or take-home |
 | AI | **On** for onsite or take-home; **off** if used as a screen |
 | Time | 50 min, or 3 hours as a take-home |
-| Starter | `exercises/python/bank_matching` |
+| Starter | `coding/python/bank_matching` |
 
 **The problem.** Given unmatched bank transactions and unmatched GL cash lines, produce
 match proposals: one-to-one, one-to-many (a batch deposit), and many-to-one (a split
@@ -377,7 +377,7 @@ same way as cash.
 | Format | Pair |
 | AI | **Off** |
 | Time | 45 min |
-| Starter | `exercises/typescript/period_close` |
+| Starter | `coding/typescript/period_close` |
 
 **The problem.** Implement period statuses `open → closing → locked`, plus a `reopen` that
 requires a reason and an actor. Posting fails while locked. During `closing`, only a
@@ -582,7 +582,7 @@ one feed.
 | Format | Pair or take-home |
 | AI | **On** |
 | Time | 45 min |
-| Starter | `exercises/python/prepaid_amortization` |
+| Starter | `coding/python/prepaid_amortization` |
 
 **The problem.** $120,000 of annual insurance paid on January 1, amortized monthly.
 Generate the prepaid asset, the monthly expense journals, and handle a mid-month start and
@@ -614,7 +614,7 @@ mutating old journals.
 | Format | Pair or take-home |
 | AI | **On** |
 | Time | 50 min |
-| Starter | `exercises/python/categorization_eval` |
+| Starter | `coding/python/categorization_eval` |
 
 **The problem.** The model proposes GL accounts with a confidence score, and anything above
 the auto-approve threshold posts without human review. Build the evaluation: coverage,

@@ -72,7 +72,7 @@ it is.
 ## Running the tests
 
 ```bash
-cd exercises/python
+cd coding/python
 pytest categorization_eval -q
 ```
 

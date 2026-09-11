@@ -53,7 +53,7 @@ The surrounding types are already written for you:
 ## Running the tests
 
 ```bash
-cd exercises/python/journal_posting
+cd coding/python/journal_posting
 pytest -q
 ```
 

@@ -58,7 +58,7 @@ month, in chronological order.
 ## Running the tests
 
 ```bash
-cd exercises/python/prepaid_amortization
+cd coding/python/prepaid_amortization
 pytest -q
 ```
 
