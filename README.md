@@ -20,6 +20,7 @@ exercises are based on real problems from our product.
 | [interview-kit.md](interview-kit.md) | All twenty questions: the problem, why we ask it, what a strong answer covers, and the follow-ups |
 | [loop.md](loop.md) | The stages of the process and what happens in each one |
 | [coding/](coding/) | Six starter folders with failing tests, each with its own detailed README |
+| [system-design/](system-design/) | Five system design challenges, each with a prompt, background, follow-ups, and a rubric |
 | [behavioral/](behavioral/) | The behavioral interview: one file per core principle, with the questions we ask and what we listen for |
 
 ## Try the exercises

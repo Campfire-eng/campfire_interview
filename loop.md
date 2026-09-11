@@ -59,11 +59,14 @@ what you check before you call a fix done.
 
 ### System design — 45 minutes, no AI
 
-One of Q4 consolidation, Q9 multi-currency, or Q18 continuous close. For platform or
-security-leaning roles we use Q14 (permissions, segregation of duties, approvals) instead.
-When the role touches reporting or compliance we use Q20 (audit and point-in-time
-reporting). Product-leaning roles may get Q6 review queue or Q12 reconciliation workspace
-instead.
+The five challenges we choose from are in [`system-design/`](system-design/), each with
+the prompt, the follow-ups, and the rubric we score against. Which one you get depends on
+the role. Backend and platform roles usually get consolidation or multi-currency. AI and
+data roles usually get the continuous reconciliation pipeline or point-in-time reporting.
+Full-stack product roles usually get period close across many entities. For platform or
+security-leaning roles we sometimes use Q14 (permissions, segregation of duties,
+approvals) from the question catalog instead, and product-leaning roles may get Q6 review
+queue or Q12 reconciliation workspace.
 
 We care about the invariants you name before you draw boxes, and about what you decide
 the system should not allow.
